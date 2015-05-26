@@ -1,0 +1,12 @@
+{
+    "name": "goblindegook/satis",
+    "description": "Private composer repository",
+    "keywords": ["package", "repository", "composer"],
+    "homepage": "https://github.com/goblindegook/satis",
+    "type": "project",
+    "license": "MIT",
+    "require-dev": {
+        "composer/composer": "dev-master",
+        "composer/satis": "dev-master"
+    }
+}

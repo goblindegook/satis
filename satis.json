@@ -1,0 +1,11 @@
+{
+    "name": "goblindegook",
+    "homepage": "http://composer.goblindegook.net",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:goblindegook/genesis.git"
+        }
+    ],
+    "require-all": true
+}
