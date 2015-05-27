@@ -4,7 +4,7 @@ shell    = require 'gulp-shell'
 
 config =
   src: 'satis.json'
-  dest: 'dist/'
+  dest: 'dist'
   deploy:
     user: 'goblinde'
     host: 'composer.goblindegook.net'
@@ -18,7 +18,7 @@ gulp.task 'build', ['composer'], shell.task [
 ]
 
 gulp.task 'deploy', shell.task [
-  "rsync -av --delete #{config.dest} #{config.deploy.user}@#{config.deploy.host}:#{config.deploy.path}"
+  "rsync -av --delete #{config.dest}/ #{config.deploy.user}@#{config.deploy.host}:#{config.deploy.path}"
 ]
 
 gulp.task 'default', ['build']
