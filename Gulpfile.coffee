@@ -20,3 +20,5 @@ gulp.task 'build', ['composer'], shell.task [
 gulp.task 'deploy', shell.task [
   "rsync -a --delete #{config.dest} #{config.deploy.user}@#{config.deploy.host}:#{config.deploy.path}"
 ]
+
+gulp.task 'default', ['build']
