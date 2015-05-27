@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "coffee-script": "^1.9.2",
+    "gulp": "^3.8.11",
+    "gulp-composer": "^0.1.0",
+    "gulp-shell": "^0.4.1"
+  }
+}
