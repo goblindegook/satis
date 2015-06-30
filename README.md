@@ -1,21 +1,19 @@
-Satis - Package Repository Generator
-====================================
+# Satis - Package Repository Generator
 
 Static Composer repository.
 
 It uses any composer.json file as input and dumps all the required (according
 to their version constraints) packages to a Composer Repository file.
 
-Usage
------
+## Usage
 
-- Install satis: `php composer.phar install`
-- Build a repository: `php vendor/bin/satis build satis.json dist`
+* Install dependencies: `npm install`
+* Build the repository: `gulp [build]`
+* Deploy the repository: `gulp deploy`
 
-Read the more detailed instructions in the 
+Find out more about Satis in the 
 [documentation](http://getcomposer.org/doc/articles/handling-private-packages-with-satis.md).
 
-Updating
---------
+## Updating
 
-Updating is as simple as running `php composer.phar update` in the satis directory.
+Updating is as simple as running `composer update` in the satis directory.
