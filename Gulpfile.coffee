@@ -1,6 +1,7 @@
 gulp     = require 'gulp'
 composer = require 'gulp-composer'
 shell    = require 'gulp-shell'
+del      = require 'del'
 
 config =
   src: 'satis.json'
@@ -20,5 +21,8 @@ gulp.task 'build', ['composer'], shell.task [
 gulp.task 'deploy', shell.task [
   "rsync -av --delete #{config.dest}/ #{config.deploy.user}@#{config.deploy.host}:#{config.deploy.path}"
 ]
+
+gulp.task 'clean', ->
+  del [config.dest]
 
 gulp.task 'default', ['build']

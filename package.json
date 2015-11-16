@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "coffee-script": "^1.9.2",
+    "del": "^2.1.0",
     "gulp": "^3.8.11",
     "gulp-composer": "^0.1.0",
     "gulp-shell": "^0.4.1"
