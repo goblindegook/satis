@@ -6,7 +6,7 @@
     "url": "git@gitlab.com:goblindegook/advanced-custom-fields-pro.git"
   }, {
     "type": "vcs",
-    "url": "git@bitbucket.org:goblindegook/genesis.git"
+    "url": "git@gitlab.com:goblindegook/genesis.git"
   }],
   "require-all": true,
   "require-dev-dependencies": true
